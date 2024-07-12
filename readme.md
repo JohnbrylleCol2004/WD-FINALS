@@ -12,7 +12,7 @@
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  This repository is to showcase my personal website.
+  This repository is to present my personal website.
 </div>
 
 <br />
@@ -58,11 +58,7 @@
 <!-- The following are just sample -->
 Description of the project in details.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+The purpose of this repository is to showcase my past projects and my personal website through the use of ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white) and ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
 ### Key Components
 <!-- TODO: List of Key Components -->
