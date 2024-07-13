@@ -141,6 +141,8 @@ section.hero{
             &:hover{
                 background: linear-gradient(45deg, #2D64F5, #2D64F5);
                 color: #fff;
+                transform: scale(1.1);
+                box-shadow: rgba(0, 0, 0, 0.4);
             }
         }
     

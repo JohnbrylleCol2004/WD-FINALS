@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: linear-gradient(132deg, rgb(31, 207, 195) 0.00%, rgb(31, 145, 207) 100.00%);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    & h2{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+    }
+    & ul{
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+        & li{
+            align-items: center;
+            margin-right: 20px;
+            & a{
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: none;
+                color: #333;
+                font-weight: 500;
+                margin: 20px;
+                padding: 10px;
+                transition: 1.1s ease;
+                &:hover{
+                    color: #fff;
+                    background: linear-gradient(132deg, rgb(65, 80, 95) 0.00%, rgb(36, 37, 38) 100.00%);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+section.about{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 80px 13%;
+    background: url(../);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    & img{
+        width: 70%;
+        height: auto;
+        border-radius: 50px;
+    }
+    & .about-right{
+        width: 57%;
+        & h1{
+            color: rgb(28, 103, 178);
+            font-size: 37px;
+            margin-bottom: 5px;
+        }
+        & p{
+            color: #fff;
+            line-height: 26px;
+            font-size: 15px;
+        }
+        & .social-logo{
+            margin-right: 20px;
+            color: #fff;
+        }
+    }
+}
+.about-right ul li{
+    display: flex;
+    align-items: ;
+}
+.about-right .social{
+    margin: 25px 0;
+}
+.about-right .social ul li{
+    margin-bottom: 5px;
+}
