@@ -1,0 +1,111 @@
+@keyframes animate{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 0%;
+    }
+    100%{
+        background-position: 0% 100%;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url(../img/bg.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #5b93ab;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    & img{
+        width: 57px;
+        align-items: center;
+    }
+    & a{
+        color: #000;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        &:hover{
+            background-color: #1209b7;
+            color: #5b93ab;
+            border: solid 1px #5b93ab;
+        }
+    }
+}
+section.pref{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    padding: 2rem;
+    height: 100dvh;
+    width: 100dvw;
+     & h1{
+        margin: 5rem;
+        font-size: 3rem;
+        color: #848ba1;
+        text-shadow: 2px 2px 2px #000;
+     }
+     & .icon{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 1rem;
+        & .html{
+            font-size: 6rem;
+            padding: 1.5rem;
+            margin: 1rem;
+            transition: 1s ease-in-out;
+            &:hover{
+                color: #5b93ab;
+                transform: scale(1.2);
+                &::after{
+                    content: " HTML";
+                    content: " CSS";
+                    color: transparent;
+                    text-transform: uppercase;
+                    background-image: linear-gradient(to left, #f7f7f7, #5b93ab, #3295e6, #41f1f1, #00ffb7);
+                    -webkit-background-clip: text;
+                    animation: animate 5s linear infinite;
+                    -webkit-background-size:500%;
+                }
+            }
+        }
+        & .css{
+            font-size: 6rem;
+            padding: 1.5rem;
+            margin: 1rem;
+            transition: 1s ease-in-out;
+            &:hover{
+                color: #5b93ab;
+                transform: scale(1.2);
+                &::after{
+                    content: " CSS";
+                    color: transparent;
+                    text-transform: uppercase;
+                    background-image: linear-gradient(to left, #f7f7f7, #5b93ab, #3295e6, #41f1f1, #00ffb7);
+                    -webkit-background-clip: text;
+                    animation: animate 5s linear infinite;
+                    -webkit-background-size:500%;
+                }
+            }
+        }
+     }
+}
