@@ -107,4 +107,5 @@ WD-ProjectName
 | Title | Purpose | Link |
 |-|-|-|
 |W3schools|This is where I get some of the code I've done to complete the website.|https://www.w3schools.com/|
-|Pinterest|This is where I get the ideas about the design I made|https://ph.pinterest.com/|
+|Pinterest|This is where I get the ideas about the design I made. And the gif's that I used|https://ph.pinterest.com/|
+
