@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    background: url(../img/blue.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+header.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: linear-gradient(90deg, rgba(7,19,130,1) 38%, rgba(63,236,217,1) 78%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    & img{
+        width: 57px;
+        margin-right: 10%   ;
+    }
+    & a{
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 20px;
+        background: linear-gradient(90deg, rgba(63,202,236,1) 33%, rgba(86,100,223,1) 78%);
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: 1s;
+        &:hover{
+            background: linear-gradient(90deg, rgba(86,100,223,1) 36%, rgba(63,202,236,1) 84%);
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        }
+    }
+}
+section.container{
+    padding: 50px 0px;
+    height: 100dvh;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    & .project{
+     height: 400px;
+     width: 360px;
+     padding: 20px;
+     perspective: 1000px;
+    }
+    & .card{
+     padding-top: 100px;
+     transform-style: preserve-3d;
+     background: url(../img/galaxy.jpg);
+     background-position: center center;
+     width: 100%;
+     transition: all 0.5s ease-in-out;
+     border-radius: 10px;
+      &:hover{
+        background-position: 80% 20%;
+        transform: rotate3d(0.5, 1, 0, 30deg);
+      }
+    }
+    & .content-box{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.811);
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: rgba(63,202,278,3) 0px 20px 50px -25px;
+        transition: all 0.5s ease-in-out;
+        padding: 50px 25px 25px 25px;
+        transform-style: preserve-3d;
+    }
+    & .card-title{
+        color: #fff;
+        font-size: 25px;
+        font-weight: 900;
+        transition: all 0.5s ease-in-out;
+        transform: translate3d(0px, 0px, 20px);
+        &:hover{
+            transform: translate3d(0px, 0px, 50px);
+        }
+    }
+    & .card-content{
+        padding-top: 15px;
+        font-size: 12px;
+        color: rgb(185, 185, 185);
+        transition: all 0.5s ease-in-out;
+        transform: translate3d(0px, 0px, 20px);
+        &:hover{
+            transform: translate3d(0px, 0px, 50px);
+        }
+    }
+    & .see-more{
+        text-decoration: none;
+        display: block;
+        font-weight: 900;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: rgba(63,202,236,1);
+        padding-top: 15px;
+        transition: all 0.5s ease-in-out;
+        transform: translate3d(0px, 0px, 20px);
+        &:hover{
+            transform: translate3d(0px, 0px, 50px);
+            background: rgb(1, 30, 37);
+            border-radius: 10px;
+            padding: 20px 10px;
+            margin: 10px 0px;
+        }
+    }
+    & .repo{
+        text-decoration: none;
+        display: block;
+        font-weight: 900;
+        font-size: 11px;
+        text-transform: uppercase;
+        color: rgba(63,202,236,1);
+        padding-top: 15px;
+        transition: all 0.5s ease-in-out;
+        transform: translate3d(0px, 0px, 20px);
+        &:hover{
+            transform: translate3d(0px, 0px, 50px);
+            background: rgb(1, 30, 37);
+            border-radius: 10px;
+            padding: 20px 10px;
+            margin: 10px 0px;
+        }
+    }
+    & .date-box{
+        position: absolute;
+        top: 75px;
+        left: 25px;
+        height: 60px;
+        width: 60px;
+        background: rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow:rgb(0, 102, 255) 0px 20px 60px 0px,rgb(0,200,255) 0px 10px 18px 36px -18px;
+        transform: translate3d(0px, 0px, 50px);
+        & .month{
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+        }
+        & .day{
+            color:rgb(0, 102, 255);
+            font-size: 20px;
+            font-weight: 900;
+        }
+        }
+    & .date-box span{
+        display: block;
+        text-align:center;
+    }
+    & .project-1:hover{
+        filter: hue-rotate(90deg);
+        transition: all 0.5s ease-in-out;
+    }
+    & .project-2:hover{
+        filter: hue-rotate(330deg);
+        transition: all 0.5s ease-in-out;
+    }
+    & .project-3:hover{
+        filter: hue-rotate(200deg);
+        transition: all 0.5s ease-in-out;
+    }
+    & .project-4:hover{
+        filter: hue-rotate(300deg);
+        transition: all 0.5s ease-in-out;
+    }
+    & .project-5:hover{
+        filter: hue-rotate(150deg);
+        transition: all 0.5s ease-in-out;
+    }
+    & .project-6:hover{
+        filter: hue-rotate(320deg);
+        transition: all 0.5s ease-in-out;
+    }
+}
