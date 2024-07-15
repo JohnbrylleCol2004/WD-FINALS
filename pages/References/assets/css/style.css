@@ -59,6 +59,16 @@ section.pref{
         font-size: 3rem;
         color: #848ba1;
         text-shadow: 2px 2px 2px #000;
+        background: rgba(0,0,0,0.5);
+        padding: 20px;
+        border-radius: 20px;
+        opacity: 0.9;
+        transition: 1s ease-in-out;
+        &:hover{
+            color: #5b93ab;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
      }
      & .icon{
         margin: 1rem;
@@ -69,16 +79,16 @@ section.pref{
         color: white;
         padding: 1rem;
         & .html{
+            cursor: pointer;
             font-size: 6rem;
             padding: 1.5rem;
             margin: 1rem;
-            transition: 1s ease-in-out;
+            transition: all 1s ease-in-out;
             &:hover{
                 color: #5b93ab;
                 transform: scale(1.2);
                 &::after{
                     content: " HTML";
-                    content: " CSS";
                     color: transparent;
                     text-transform: uppercase;
                     background-image: linear-gradient(to left, #f7f7f7, #5b93ab, #3295e6, #41f1f1, #00ffb7);
@@ -89,6 +99,7 @@ section.pref{
             }
         }
         & .css{
+            cursor: pointer;
             font-size: 6rem;
             padding: 1.5rem;
             margin: 1rem;
